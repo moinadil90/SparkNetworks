@@ -39,8 +39,8 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         mainAdapter = context?.let { MainAdapter(it) }
-        val obj = JSONObject(readJSONFromAsset() ?:"") ?: JSONObject()
-        if (viewModel.getEntity() == null){
+        val obj = JSONObject(readJSONFromAsset() ?: "") ?: JSONObject()
+        if (viewModel.getEntity() == null) {
             realm.executeTransaction {
                 it.createOrUpdateObjectFromJson(MyPojo::class.java, obj)
             }

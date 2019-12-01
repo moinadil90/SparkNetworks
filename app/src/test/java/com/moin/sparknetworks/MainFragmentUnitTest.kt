@@ -17,10 +17,6 @@ class MainFragmentUnitTest {
     private val havingChildrenWithPartner = arrayOf("yes", "maybe", "no")
     private val alcoholFrequency = arrayOf("never", "once or twice a year", "once or twice a month", "once or twice a week")
 
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
 
     @Test
     fun isMale() {

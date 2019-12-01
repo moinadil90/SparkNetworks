@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.moin.sparknetworks.R
 import com.moin.sparknetworks.click
@@ -78,22 +79,26 @@ class MainAdapter(private val context: Context) : RecyclerView.Adapter<MainAdapt
             viewModel?.realm?.executeTransaction {
                 questionsList[position].question_type?.selectedValue = options?.get(0).toString()
             }
+            showToast()
         }
         viewHolder.itemView.option_2.click {
             viewModel?.realm?.executeTransaction {
                 questionsList[position].question_type?.selectedValue = options?.get(1).toString()
             }
+            showToast()
         }
         viewHolder.itemView.option_3.click {
             viewModel?.realm?.executeTransaction {
                 questionsList[position].question_type?.selectedValue = options?.get(2).toString()
             }
+            showToast()
 
         }
         viewHolder.itemView.option_4.click {
             viewModel?.realm?.executeTransaction {
                 questionsList[position].question_type?.selectedValue = options?.get(3).toString()
             }
+            showToast()
         }
 
     }
@@ -108,7 +113,6 @@ class MainAdapter(private val context: Context) : RecyclerView.Adapter<MainAdapt
     ) {
         this.myPojo = myPojo
         separateListByCategory(myPojo?.questions)
-        //questionsList.addAll(myPojo?.questions ?: mutableListOf())
         questionsList.addAll(hardfactList)
         questionsList.addAll(lifestyleList)
         questionsList.addAll(introversionList)
@@ -119,14 +123,31 @@ class MainAdapter(private val context: Context) : RecyclerView.Adapter<MainAdapt
     private fun separateListByCategory(questions: RealmList<Questions>?) {
         for (i in 0..(questions?.size?.minus(1) ?: 0)) {
             when {
-                questions?.get(i)?.category.equals("hard_fact") -> questions?.get(i)?.let { hardfactList.add(it) }
-                questions?.get(i)?.category.equals("lifestyle") -> questions?.get(i)?.let { lifestyleList.add(it) }
-                questions?.get(i)?.category.equals("introversion") -> questions?.get(i)?.let { introversionList.add(it) }
+                questions?.get(i)?.category.equals("hard_fact") -> questions?.get(i)?.let {
+                    hardfactList.add(
+                        it
+                    )
+                }
+                questions?.get(i)?.category.equals("lifestyle") -> questions?.get(i)?.let {
+                    lifestyleList.add(
+                        it
+                    )
+                }
+                questions?.get(i)?.category.equals("introversion") -> questions?.get(i)?.let {
+                    introversionList.add(
+                        it
+                    )
+                }
                 else -> questions?.get(i)?.let { passionList.add(it) }
             }
         }
     }
 
-inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    private fun showToast() {
+        Toast.makeText(context, context.getString(R.string.toast_msg), Toast.LENGTH_SHORT)
+            .show()
+    }
+
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 }
