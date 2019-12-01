@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_channel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/text_1"
+            android:textColor="@color/text_color"
+            android:textSize="22sp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:paddingTop="20dp">
+
+            <RadioButton
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/rounded_corner"
+                android:checked="true"
+                android:text="@string/option_1"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/rounded_corner"
+                android:text="@string/option_2"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/rounded_corner"
+                android:text="@string/option_3"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/rounded_corner"
+                android:text="@string/option_4"
+                android:textColor="@color/text_color" />
+
+        </RadioGroup>
+
+        <!--<FrameLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            &lt;!&ndash;<androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:srcCompat="@drawable/shadow_orange" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="272dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_grey"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />&ndash;&gt;
+
+        </FrameLayout>-->
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="44dp"
+            android:alpha=".5"
+            android:background="#c8c7cc">
+        </View>
+    </RelativeLayout>
+
+</RelativeLayout>
