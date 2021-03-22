@@ -1,0 +1,15 @@
+ext {
+    KOTLIN_RX_VERSION = "2.4.0"
+    DAGGER_2_VERSION = '2.29.1'
+    TIMBER_VERSION = "4.5.0"
+    RX_JAVA_VERSION = "2.2.16"
+    RX_ANDROID_VERSION = "2.1.1"
+    RX_RELAY_VERSION = "2.1.1"
+
+    rxDependencies = [
+            rxJava   : "io.reactivex.rxjava2:rxjava:$RX_JAVA_VERSION",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$RX_ANDROID_VERSION",
+            rxRelay  : "com.jakewharton.rxrelay2:rxrelay:$RX_RELAY_VERSION",
+            rxKotlin : "com.github.ReactiveX:RxKotlin:$KOTLIN_RX_VERSION"
+    ]
+}

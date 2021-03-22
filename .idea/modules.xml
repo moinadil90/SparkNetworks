@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SparkNetworks.iml" filepath="$PROJECT_DIR$/SparkNetworks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-persistencestorage/SparkNetworks.lib-persistencestorage.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-persistencestorage/SparkNetworks.lib-persistencestorage.iml" />
     </modules>
   </component>
 </project>

@@ -9,6 +9,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
+import com.moin.sparknetworks.presentation.view.PersonalityActivity
 import junit.framework.Assert.assertEquals
 import org.junit.*
 import org.junit.runner.RunWith
@@ -25,7 +26,7 @@ import org.junit.runners.MethodSorters
 class MainActivityInstrumentedTest {
 
     @get:Rule
-    var mainActivityInstrumentedTestRule = ActivityTestRule(MainActivity::class.java, true, true)
+    var mainActivityInstrumentedTestRule = ActivityTestRule(PersonalityActivity::class.java, true, true)
 
     @Before
     fun setUp() {
