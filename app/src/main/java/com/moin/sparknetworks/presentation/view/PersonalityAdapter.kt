@@ -115,6 +115,10 @@ class PersonalityAdapter(private val context: Context) :
         return questionsList.size
     }
 
+    override fun getItemViewType(position: Int): Int {
+        return super.getItemViewType(position)
+    }
+
     fun setData(t: List<QuestionRecord>) {
         separateListByCategory(t)
         questionsList.addAll(hardfactList)

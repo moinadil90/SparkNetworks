@@ -1,642 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c2a3446-c335-4035-9f8d-8a6e99955dfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/moin/sparknetworks/MainActivityInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/moin/sparknetworks/MainActivityInstrumentedTest.kt" afterDir="false" />
+    <list default="true" id="240808bc-6345-4a2b-8b8c-f407a90e2efd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_adapter_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_adapter_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PDAID18092501800]" />
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
-        <option value="Class" />
-        <option value="Kotlin Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1pFuz1kOzHO9cijC0ibcLeW8y47" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="hmd_global-nokia_5_1_plus-PDAID18092501800" />
-    <property name="DEBUGGABLE_PROCESS" value="com.moin.sparknetworks" />
-    <property name="DEBUGGER_ID" value="Auto" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.moin.sparknetworks.model.storage" />
-      <recent name="com.moin.sparknetworks.presentation.viewmodel" />
-      <recent name="com.moin.sparknetworks.presentation.view" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android Instrumented Tests.PersonalActivityInst...">
-    <configuration name="MainFragmentUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SparkNetworks.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moin.sparknetworks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moin.sparknetworks" />
-      <option name="MAIN_CLASS_NAME" value="com.moin.sparknetworks.MainFragmentUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonalityViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SparkNetworks.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moin.sparknetworks.presentation.viewmodel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moin.sparknetworks.presentation.viewmodel" />
-      <option name="MAIN_CLASS_NAME" value="com.moin.sparknetworks.presentation.viewmodel.PersonalityViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonalityViewModelTest.check_save_success" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SparkNetworks.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moin.sparknetworks.presentation.viewmodel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moin.sparknetworks.presentation.viewmodel" />
-      <option name="MAIN_CLASS_NAME" value="com.moin.sparknetworks.presentation.viewmodel.PersonalityViewModelTest" />
-      <option name="METHOD_NAME" value="check_save_success" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="SparkNetworks.app" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lib-persistencestorage" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="SparkNetworks.lib-persistencestorage" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainActivityInstrume..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="SparkNetworks.app" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.moin.sparknetworks.MainActivityInstrumentedTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonalActivityInst..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="SparkNetworks.app" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.moin.sparknetworks.PersonalActivityInstrumentedTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Android Instrumented Tests.PersonalActivityInst..." />
-        <item itemvalue="Android Instrumented Tests.MainActivityInstrume..." />
-        <item itemvalue="Android JUnit.MainFragmentUnitTest" />
-        <item itemvalue="Android JUnit.PersonalityViewModelTest" />
-        <item itemvalue="Android JUnit.PersonalityViewModelTest.check_save_success" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4c2a3446-c335-4035-9f8d-8a6e99955dfe" name="Default Changelist" comment="" />
-      <created>1575196888482</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1575196888482</updated>
-    </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="387" y="257" key="#PSD" timestamp="1615187819631">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog" timestamp="1616786862587">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="387" y="257" key="#PSD/0.23.1792.1028@0.23.1792.1028" timestamp="1615187819631" />
-    <state x="583" y="117" key="#app" timestamp="1615213237573">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616786818150" />
+    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862587" />
+    <state width="1750" height="327" key="GridCell.Tab.0.bottom" timestamp="1616786862570">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="583" y="117" key="#app/0.23.1792.1030@0.23.1792.1030" timestamp="1615213237573" />
-    <state x="681" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1616340504113">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="327" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862570" />
+    <state width="1750" height="327" key="GridCell.Tab.0.center" timestamp="1616786862570">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="681" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1616340504113" />
-    <state x="681" y="241" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1030@0.23.1792.1030" timestamp="1615216267119" />
-    <state x="681" y="244" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1042@0.23.1792.1042" timestamp="1615726885573" />
-    <state x="681" y="244" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1043@0.23.1792.1043" timestamp="1615738002700" />
-    <state x="492" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616423944942">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="327" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862570" />
+    <state width="1750" height="327" key="GridCell.Tab.0.left" timestamp="1616786862570">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="492" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616423944942" />
-    <state x="492" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1615181326683" />
-    <state x="492" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1043@0.23.1792.1043" timestamp="1615124127138" />
-    <state x="640" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615189513475">
-      <screen x="0" y="23" width="1792" height="1031" />
+    <state width="1750" height="327" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862570" />
+    <state width="1750" height="327" key="GridCell.Tab.0.right" timestamp="1616786862570">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="640" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1615189513475" />
-    <state x="583" y="117" key="#lib-persistencestorage" timestamp="1615213076225">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1750" height="327" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862570" />
+    <state width="1750" height="327" key="GridCell.Tab.1.bottom" timestamp="1616786862571">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="583" y="117" key="#lib-persistencestorage/0.23.1792.1030@0.23.1792.1030" timestamp="1615213076225" />
-    <state x="583" y="117" key="#lib-persistencestorage/0.23.1792.1031@0.23.1792.1031" timestamp="1615210480431" />
-    <state x="607" y="317" width="556" height="403" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1615185662465">
-      <screen x="0" y="23" width="1792" height="1031" />
+    <state width="1750" height="327" key="GridCell.Tab.1.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862571" />
+    <state width="1750" height="327" key="GridCell.Tab.1.center" timestamp="1616786862571">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="607" y="317" width="556" height="403" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1615185662465" />
-    <state x="1084" y="96" width="596" height="761" key="#xdebugger.evaluate" timestamp="1616341706310">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="327" key="GridCell.Tab.1.center/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862571" />
+    <state width="1750" height="327" key="GridCell.Tab.1.left" timestamp="1616786862570">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="1084" y="96" width="596" height="761" key="#xdebugger.evaluate/0.0.1792.1120@0.0.1792.1120" timestamp="1616341706310" />
-    <state x="1084" y="221" key="#xdebugger.evaluate/0.23.1792.1042@0.23.1792.1042" timestamp="1615741222830" />
-    <state x="1084" y="221" key="#xdebugger.evaluate/0.23.1792.1043@0.23.1792.1043" timestamp="1616301925687" />
-    <state x="1084" y="221" key="#xdebugger.evaluate/0.23.1792.1044@0.23.1792.1044" timestamp="1616309763449" />
-    <state x="660" y="313" key="AndroidProcessChooserDialog" timestamp="1616341980745">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="327" key="GridCell.Tab.1.left/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862570" />
+    <state width="1750" height="327" key="GridCell.Tab.1.right" timestamp="1616786862571">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="660" y="313" key="AndroidProcessChooserDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616341980745" />
-    <state x="660" y="314" key="AndroidProcessChooserDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1615740815605" />
-    <state x="660" y="314" key="AndroidProcessChooserDialog/0.23.1792.1043@0.23.1792.1043" timestamp="1615741605704" />
-    <state x="660" y="314" key="AndroidProcessChooserDialog/0.23.1792.1044@0.23.1792.1044" timestamp="1616309397424" />
-    <state x="660" y="315" key="AndroidProcessChooserDialog/0.23.1792.1045@0.23.1792.1045" timestamp="1616302028725" />
-    <state x="660" y="315" key="AndroidProcessChooserDialog/0.23.1792.1046@0.23.1792.1046" timestamp="1616303047448" />
-    <state width="590" height="466" key="DebuggerActiveHint" timestamp="1616326427837">
-      <screen x="0" y="23" width="1792" height="1043" />
-    </state>
-    <state width="590" height="466" key="DebuggerActiveHint/0.0.1792.1120@0.0.1792.1120" timestamp="1616326398002" />
-    <state width="535" height="434" key="DebuggerActiveHint/0.23.1792.1042@0.23.1792.1042" timestamp="1615703007344" />
-    <state width="590" height="466" key="DebuggerActiveHint/0.23.1792.1043@0.23.1792.1043" timestamp="1616326427837" />
-    <state width="590" height="436" key="DebuggerActiveHint/0.23.1792.1046@0.23.1792.1046" timestamp="1616302927149" />
-    <state width="1750" height="328" key="GridCell.Tab.0.bottom" timestamp="1616775879182">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616775879182" />
-    <state width="1659" height="218" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810035" />
-    <state width="1750" height="235" key="GridCell.Tab.0.bottom/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995979" />
-    <state width="1750" height="208" key="GridCell.Tab.0.bottom/0.23.1792.1044@0.23.1792.1044" timestamp="1616309397579" />
-    <state width="1750" height="138" key="GridCell.Tab.0.bottom/0.23.1792.1045@0.23.1792.1045" timestamp="1616302236716" />
-    <state width="1750" height="208" key="GridCell.Tab.0.bottom/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548203" />
-    <state width="1750" height="328" key="GridCell.Tab.0.center" timestamp="1616775879181">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616775879181" />
-    <state width="1659" height="218" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810034" />
-    <state width="1750" height="235" key="GridCell.Tab.0.center/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995979" />
-    <state width="1750" height="208" key="GridCell.Tab.0.center/0.23.1792.1044@0.23.1792.1044" timestamp="1616309397578" />
-    <state width="1750" height="138" key="GridCell.Tab.0.center/0.23.1792.1045@0.23.1792.1045" timestamp="1616302236715" />
-    <state width="1750" height="208" key="GridCell.Tab.0.center/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548203" />
-    <state width="1750" height="328" key="GridCell.Tab.0.left" timestamp="1616775879181">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616775879181" />
-    <state width="1659" height="218" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810034" />
-    <state width="1750" height="235" key="GridCell.Tab.0.left/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995979" />
-    <state width="1750" height="208" key="GridCell.Tab.0.left/0.23.1792.1044@0.23.1792.1044" timestamp="1616309397578" />
-    <state width="1750" height="138" key="GridCell.Tab.0.left/0.23.1792.1045@0.23.1792.1045" timestamp="1616302236715" />
-    <state width="1750" height="208" key="GridCell.Tab.0.left/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548202" />
-    <state width="1750" height="328" key="GridCell.Tab.0.right" timestamp="1616775879182">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616775879182" />
-    <state width="1659" height="218" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810035" />
-    <state width="1750" height="235" key="GridCell.Tab.0.right/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995979" />
-    <state width="1750" height="208" key="GridCell.Tab.0.right/0.23.1792.1044@0.23.1792.1044" timestamp="1616309397579" />
-    <state width="1750" height="138" key="GridCell.Tab.0.right/0.23.1792.1045@0.23.1792.1045" timestamp="1616302236716" />
-    <state width="1750" height="208" key="GridCell.Tab.0.right/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548203" />
-    <state width="1750" height="328" key="GridCell.Tab.1.bottom" timestamp="1616775882266">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616775882266" />
-    <state width="1659" height="218" key="GridCell.Tab.1.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810036" />
-    <state width="1750" height="235" key="GridCell.Tab.1.bottom/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995980" />
-    <state width="1750" height="208" key="GridCell.Tab.1.bottom/0.23.1792.1044@0.23.1792.1044" timestamp="1616309406609" />
-    <state width="1750" height="209" key="GridCell.Tab.1.bottom/0.23.1792.1045@0.23.1792.1045" timestamp="1616302053211" />
-    <state width="1750" height="208" key="GridCell.Tab.1.bottom/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548204" />
-    <state width="1750" height="328" key="GridCell.Tab.1.center" timestamp="1616775882265">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616775882265" />
-    <state width="1659" height="218" key="GridCell.Tab.1.center/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810035" />
-    <state width="1750" height="235" key="GridCell.Tab.1.center/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995980" />
-    <state width="1750" height="208" key="GridCell.Tab.1.center/0.23.1792.1044@0.23.1792.1044" timestamp="1616309406608" />
-    <state width="1750" height="209" key="GridCell.Tab.1.center/0.23.1792.1045@0.23.1792.1045" timestamp="1616302053210" />
-    <state width="1750" height="208" key="GridCell.Tab.1.center/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548204" />
-    <state width="1750" height="328" key="GridCell.Tab.1.left" timestamp="1616775882264">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616775882264" />
-    <state width="1659" height="218" key="GridCell.Tab.1.left/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810035" />
-    <state width="1750" height="235" key="GridCell.Tab.1.left/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995979" />
-    <state width="1750" height="208" key="GridCell.Tab.1.left/0.23.1792.1044@0.23.1792.1044" timestamp="1616309406608" />
-    <state width="1750" height="209" key="GridCell.Tab.1.left/0.23.1792.1045@0.23.1792.1045" timestamp="1616302053210" />
-    <state width="1750" height="208" key="GridCell.Tab.1.left/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548203" />
-    <state width="1750" height="328" key="GridCell.Tab.1.right" timestamp="1616775882266">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="328" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616775882266" />
-    <state width="1659" height="218" key="GridCell.Tab.1.right/0.23.1792.1042@0.23.1792.1042" timestamp="1615783810036" />
-    <state width="1750" height="235" key="GridCell.Tab.1.right/0.23.1792.1043@0.23.1792.1043" timestamp="1616301995980" />
-    <state width="1750" height="208" key="GridCell.Tab.1.right/0.23.1792.1044@0.23.1792.1044" timestamp="1616309406608" />
-    <state width="1750" height="209" key="GridCell.Tab.1.right/0.23.1792.1045@0.23.1792.1045" timestamp="1616302053211" />
-    <state width="1750" height="208" key="GridCell.Tab.1.right/0.23.1792.1046@0.23.1792.1046" timestamp="1616303548204" />
-    <state width="896" height="560" key="XDebugger.FullValuePopup" timestamp="1616326427823">
-      <screen x="0" y="23" width="1792" height="1043" />
-    </state>
-    <state width="896" height="560" key="XDebugger.FullValuePopup/0.0.1792.1120@0.0.1792.1120" timestamp="1616326397986" />
-    <state width="896" height="560" key="XDebugger.FullValuePopup/0.23.1792.1041@0.23.1792.1041" timestamp="1615908115697" />
-    <state width="896" height="560" key="XDebugger.FullValuePopup/0.23.1792.1043@0.23.1792.1043" timestamp="1616326427823" />
-    <state x="673" y="345" key="chooseDestDirectoryDialog" timestamp="1616507507348">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="673" y="345" key="chooseDestDirectoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616507507348" />
-    <state x="340" y="431" width="1184" height="648" key="dock-window-1" timestamp="1615398561436">
-      <screen x="0" y="23" width="1792" height="1037" />
-    </state>
-    <state x="340" y="431" width="1184" height="648" key="dock-window-1/0.23.1792.1037@0.23.1792.1037" timestamp="1615398561436" />
-    <state x="554" y="272" width="978" height="533" key="find.popup" timestamp="1616517177998">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="554" y="272" width="978" height="533" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1616517177998" />
-    <state x="554" y="273" width="615" height="490" key="find.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1615211380617" />
-    <state x="554" y="273" width="615" height="490" key="find.popup/0.23.1792.1031@0.23.1792.1031" timestamp="1615215572835" />
-    <state x="742" y="326" key="refactoring.ChangeSignatureDialog" timestamp="1616314189602">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="742" y="326" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616314189602" />
-    <state x="742" y="323" key="refactoring.ChangeSignatureDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1615216086612" />
-    <state x="742" y="323" key="refactoring.ChangeSignatureDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1615210090366" />
-    <state x="567" y="238" width="670" height="736" key="search.everywhere.popup" timestamp="1616341666688">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="567" y="238" width="670" height="736" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1616341666688" />
-    <state x="567" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1615211532303" />
-    <state x="567" y="244" width="670" height="684" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1615709039155" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/model/storage/dao/PersonalityDAO.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/model/storage/dao/PersonalityDAO.kt</url>
-          <line>24</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityFragment.kt</url>
-          <line>65</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/MyApplication.kt</url>
-          <line>10</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityFragment.kt</url>
-          <line>61</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/model/storage/dao/PersonalityDAO.kt</url>
-          <line>36</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityFragment.kt</url>
-          <line>80</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityFragment.kt</url>
-          <line>45</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/model/storage/dao/PersonalityDAO.kt</url>
-          <line>22</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt</url>
-          <line>91</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/lib-persistencestorage/src/main/java/com/moin/sparknetworks/lib_persistencestorage/db/realm/RealmDB.kt</url>
-          <line>41</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/lib-persistencestorage/src/main/java/com/moin/sparknetworks/lib_persistencestorage/db/realm/RealmDB.kt</url>
-          <line>43</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/lib-persistencestorage/src/main/java/com/moin/sparknetworks/lib_persistencestorage/db/realm/RealmDB.kt</url>
-          <line>32</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/lib-persistencestorage/src/main/java/com/moin/sparknetworks/lib_persistencestorage/db/realm/RealmDB.kt</url>
-          <line>30</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt</url>
-          <line>90</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/androidTest/java/com/moin/sparknetworks/MainActivityInstrumentedTest.kt</url>
-          <line>43</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.16/abd8dce1e0c5f2ed27f3819cbb3ca7a5cf9e1085/rxjava-2.2.16-sources.jar!/io/reactivex/internal/operators/completable/CompletableCreate.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1750" height="327" key="GridCell.Tab.1.right/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862571" />
   </component>
 </project>
