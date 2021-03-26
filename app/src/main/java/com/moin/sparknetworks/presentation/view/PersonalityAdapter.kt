@@ -39,7 +39,7 @@ class PersonalityAdapter(private val context: Context) :
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.question.text = questionsList[position].question.toString()
         val options = questionsList[position].question_type?.options
-        val selected = questionsList[position].question_type?.selectedValue
+        val selectedOptionValue = questionsList[position].question_type?.selectedValue
 
         if (options?.size == 3) {
             viewHolder.itemView.option_4.gone()
@@ -47,28 +47,28 @@ class PersonalityAdapter(private val context: Context) :
             viewHolder.itemView.option_4.show()
         }
 
-        options?.forEachIndexed { index, s ->
+        options?.forEachIndexed { index, alreadySelectedValue ->
             when (index) {
                 0 -> {
-                    if (s == selected) {
+                    if (alreadySelectedValue == selectedOptionValue) {
                         viewHolder.itemView.option_1.isChecked = true
                     }
                     viewHolder.itemView.option_1.text = options[index]
                 }
                 1 -> {
-                    if (s == selected) {
+                    if (alreadySelectedValue == selectedOptionValue) {
                         viewHolder.itemView.option_2.isChecked = true
                     }
                     viewHolder.itemView.option_2.text = options[index]
                 }
                 2 -> {
                     viewHolder.itemView.option_3.text = options[index]
-                    if (s == selected) {
+                    if (alreadySelectedValue == selectedOptionValue) {
                         viewHolder.itemView.option_3.isChecked = true
                     }
                 }
                 3 -> {
-                    if (s == selected) {
+                    if (alreadySelectedValue == selectedOptionValue) {
                         viewHolder.itemView.option_4.isChecked = true
                     }
                     viewHolder.itemView.option_4.text = options[index]
