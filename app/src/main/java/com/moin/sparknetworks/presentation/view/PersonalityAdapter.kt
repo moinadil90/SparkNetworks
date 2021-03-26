@@ -12,13 +12,12 @@ import com.moin.sparknetworks.gone
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.show
 import io.realm.Realm
-import kotlinx.android.synthetic.main.item_layout.view.*
+import kotlinx.android.synthetic.main.layout_personality_adapter_item.view.*
 
 
 class PersonalityAdapter(private val context: Context) :
     RecyclerView.Adapter<PersonalityAdapter.ViewHolder>() {
 
-    private var allQuestionsList = mutableListOf<QuestionRecord>()
     private var questionsList = mutableListOf<QuestionRecord>()
     private var hardfactList = mutableListOf<QuestionRecord>()
     private var lifestyleList = mutableListOf<QuestionRecord>()
@@ -29,7 +28,7 @@ class PersonalityAdapter(private val context: Context) :
 
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.item_layout,
+                R.layout.layout_personality_adapter_item,
                 parent,
                 false
             )

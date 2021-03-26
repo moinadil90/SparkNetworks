@@ -20,10 +20,10 @@ class PersonalityActivity : AppCompatActivity() {
             .questionModule(QuestionModule(applicationContext, this))
             .build().inject(this)
 
-        setContentView(R.layout.main_activity)
+        setContentView(R.layout.layout_personality_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.container, PersonalityFragment.newInstance())
+                .add(R.id.parent_container, PersonalityFragment.newInstance())
                 .commitNow()
         }
     }

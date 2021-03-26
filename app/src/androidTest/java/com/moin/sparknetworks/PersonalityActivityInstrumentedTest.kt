@@ -1,17 +1,18 @@
 package com.moin.sparknetworks
 
-import androidx.test.InstrumentationRegistry
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import com.moin.sparknetworks.presentation.view.PersonalityActivity
 import junit.framework.Assert.assertEquals
-import org.junit.*
+import org.junit.Before
+import org.junit.FixMethodOrder
+import org.junit.Rule
+import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.MethodSorters
 
@@ -21,9 +22,10 @@ import org.junit.runners.MethodSorters
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-@LargeTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class MainActivityInstrumentedTest {
+class PersonalActivityInstrumentedTest {
+
+    private val packageName: String = "com.moin.sparknetworks"
 
     @get:Rule
     var mainActivityInstrumentedTestRule = ActivityTestRule(PersonalityActivity::class.java, true, true)
@@ -37,13 +39,13 @@ class MainActivityInstrumentedTest {
     @Test
     fun testPackageName() {
         // Context of the app under test.
-        val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.moin.sparknetworks", appContext.packageName)
+        val appContext = androidx.test.platform.app.InstrumentationRegistry.getInstrumentation()
+        assertEquals(packageName, appContext.targetContext.packageName)
     }
 
     @Test
     fun containerPerformClick() {
-        Espresso.onView(withId(R.id.container)).perform(click())
+        Espresso.onView(withId(R.id.parent_container)).perform(click())
     }
 
     @Test
@@ -53,7 +55,7 @@ class MainActivityInstrumentedTest {
 
     @Test
     fun performClickOnMainFragment() {
-        Espresso.onView(withId(R.id.main)).perform(click())
+        Espresso.onView(withId(R.id.personality_fragment_layout)).perform(click())
     }
 
 }

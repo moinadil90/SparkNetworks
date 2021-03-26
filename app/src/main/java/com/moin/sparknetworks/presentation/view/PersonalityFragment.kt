@@ -7,16 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.moin.sparknetworks.PersistenceStorageManager
 import com.moin.sparknetworks.R
-import com.moin.sparknetworks.lib_persistencestorage.PersistenceStorage
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.utils.readJSONFromAsset
 import io.reactivex.observers.DisposableCompletableObserver
 import io.reactivex.observers.DisposableSingleObserver
 import io.realm.Realm
-import kotlinx.android.synthetic.main.main_fragment.*
-import org.json.JSONArray
+import kotlinx.android.synthetic.main.layout_personality_fragment.*
 import org.json.JSONObject
 import timber.log.Timber
 
@@ -33,7 +30,7 @@ class PersonalityFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        return inflater.inflate(R.layout.layout_personality_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -82,17 +79,4 @@ class PersonalityFragment : Fragment() {
                 }
             })
     }
-
-
-    /*private fun convertQuestionListToQuestionRecord(questionsList: MutableList<JSONArray>): List<QuestionRecord> {
-        val questions = mutableListOf<QuestionRecord>()
-        for (i in 0..(questionsList[0].length().minus(1))) {
-            questions.add(
-                QuestionRecord(
-                    ((questionsList[0][i] as JSONObject).get("question").toString()), null, null
-                )
-            )
-        }
-        return questions
-    }*/
 }
