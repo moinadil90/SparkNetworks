@@ -17,11 +17,6 @@ internal interface DBContract {
     fun getDB(): Any
 
     /**
-     * Init  the DB.
-     */
-    fun getRefreshDB(): Any
-
-    /**
      * Close the DB.
      */
     fun close()

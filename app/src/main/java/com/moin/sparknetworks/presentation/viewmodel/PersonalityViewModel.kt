@@ -2,6 +2,7 @@ package com.moin.sparknetworks.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.moin.sparknetworks.domain.PersonalityInteractorContract
+import com.moin.sparknetworks.model.repository.PersonalityRepositoryContract
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import io.reactivex.Completable
 import io.reactivex.Single

@@ -1,7 +1,6 @@
 package com.moin.sparknetworks.presentation.view
 
 import android.content.Context
-import android.os.AsyncTask.execute
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,16 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.moin.sparknetworks.R
 import com.moin.sparknetworks.click
 import com.moin.sparknetworks.gone
-import com.moin.sparknetworks.lib_persistencestorage.PersistenceStorage
-import com.moin.sparknetworks.lib_persistencestorage.PersistenceStorage.getDB
-import com.moin.sparknetworks.model.storage.records.PersonalityRecord
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.show
 import io.realm.Realm
-import io.realm.exceptions.RealmException
 import kotlinx.android.synthetic.main.item_layout.view.*
-import timber.log.Timber
-import kotlin.concurrent.thread
 
 
 class PersonalityAdapter(private val context: Context) :

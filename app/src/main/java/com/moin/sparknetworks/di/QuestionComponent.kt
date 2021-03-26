@@ -3,7 +3,6 @@ package com.moin.sparknetworks.di
 import com.moin.sparknetworks.domain.PersonalityInteractor
 import com.moin.sparknetworks.model.repository.PersonalityRepository
 import com.moin.sparknetworks.presentation.view.PersonalityActivity
-import com.moin.sparknetworks.presentation.viewmodel.PersonalityViewModel
 import dagger.Component
 
 @Component(

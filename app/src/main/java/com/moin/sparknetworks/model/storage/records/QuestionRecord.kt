@@ -3,7 +3,6 @@ package com.moin.sparknetworks.model.storage.records
 import com.moin.sparknetworks.utils.rand
 import io.realm.RealmList
 import io.realm.RealmObject
-import io.realm.annotations.Ignore
 import io.realm.annotations.PrimaryKey
 import io.realm.annotations.RealmClass
 

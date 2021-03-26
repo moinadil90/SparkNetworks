@@ -16,8 +16,6 @@ object PersistenceStorage : PersistenceStorageContract {
         return appDB?.getDB() ?: throw DBNotInitializeException()
     }
 
-    override fun getRefreshDB() = appDB?.getRefreshDB() ?: throw DBNotInitializeException()
-
     override fun close() = appDB?.close() ?: throw DBNotInitializeException()
 
     override fun clear() = appDB?.clear() ?: throw DBNotInitializeException()

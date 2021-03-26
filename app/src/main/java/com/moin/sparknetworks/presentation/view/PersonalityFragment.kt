@@ -23,13 +23,6 @@ import timber.log.Timber
 
 class PersonalityFragment : Fragment() {
 
-    private var realm: Realm = Realm.getDefaultInstance()
-    private var questionsList = mutableListOf<JSONArray>()
-    private var hardfactList = mutableListOf<QuestionRecord>()
-    private var lifestyleList = mutableListOf<QuestionRecord>()
-    private var introversionList = mutableListOf<QuestionRecord>()
-    private var passionList = mutableListOf<QuestionRecord>()
-
     companion object {
         fun newInstance() = PersonalityFragment()
     }
@@ -50,7 +43,6 @@ class PersonalityFragment : Fragment() {
         if (Realm.getDefaultInstance().where(QuestionRecord::class.java).findFirst() == null) {
             val personalityObject =
                 JSONObject(readJSONFromAsset(activity?.applicationContext) ?: "")
-            //questionsList.add(((personalityObject.get("questions") as JSONArray)))
             saveQuestionsToDB(personalityObject)
         }
 

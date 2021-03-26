@@ -2,8 +2,6 @@ package com.moin.sparknetworks
 
 import android.content.Context
 import com.moin.sparknetworks.lib_persistencestorage.PersistenceStorage
-import com.moin.sparknetworks.lib_persistencestorage.RealmModuleContract
-import io.reactivex.Completable
 
 object PersistenceStorageManager {
     private lateinit var context: Context

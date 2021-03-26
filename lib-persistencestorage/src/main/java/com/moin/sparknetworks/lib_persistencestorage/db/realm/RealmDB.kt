@@ -37,9 +37,6 @@ internal class RealmDB(
         return Realm.getDefaultInstance()
     }
 
-    override fun getRefreshDB(): Any =
-        (getDB() as Realm).apply { if (!isInTransaction) refresh() } // Refresh only when it is outside any transaction.
-
     override fun configuration() {
         try {
             getRealmConfiguration()
@@ -62,32 +59,6 @@ internal class RealmDB(
     override fun clear(): Any {
         return Realm.getApplicationContext()?.deleteDatabase("sparknetworks.realm")!!
     }
-
-    /*override fun clear(): Completable = Completable.create { emitter ->
-        changeList.run {
-            val completableSourceList = mutableListOf<CompletableSource>()
-            forEach {
-                completableSourceList.add(it.clearStorage(getRefreshDB() as Realm)) // Sequential call
-            }
-            Completable.mergeArray(*completableSourceList.toTypedArray())
-                    .doFinally {
-                        Handler(Looper.getMainLooper()).post {
-                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                                CookieManager.getInstance().removeAllCookies { Timber.d("Cookies Cleared!!") }
-                            }
-                        }
-                    }.subscribe(object : DisposableCompletableObserver() {
-                        override fun onComplete() {
-                            emitter.onComplete()
-                        }
-
-                        override fun onError(e: Throwable) {
-                            Timber.e(e)
-                            emitter.onError(e)
-                        }
-                    })
-        }
-    }*/
 
     private fun getRealmConfiguration() {
         val realmConfigurationBuilder = RealmConfiguration.Builder()

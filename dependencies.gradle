@@ -5,11 +5,26 @@ ext {
     RX_JAVA_VERSION = "2.2.16"
     RX_ANDROID_VERSION = "2.1.1"
     RX_RELAY_VERSION = "2.1.1"
+    JUNIT_VERSION = '4.13.1'
+    MOCKITO_VERSION = "3.3.3"
+    POWERMOCK_VERSION = "2.0.7"
+    POWERMOCK_CLASSLOADER_VERSION = "2.0.7"
+    ASSERTJ_VERSION = '3.18.0'
 
     rxDependencies = [
             rxJava   : "io.reactivex.rxjava2:rxjava:$RX_JAVA_VERSION",
             rxAndroid: "io.reactivex.rxjava2:rxandroid:$RX_ANDROID_VERSION",
             rxRelay  : "com.jakewharton.rxrelay2:rxrelay:$RX_RELAY_VERSION",
             rxKotlin : "com.github.ReactiveX:RxKotlin:$KOTLIN_RX_VERSION"
+    ]
+
+    unitTestDependencies = [
+            jUnit                    : "junit:junit:$JUNIT_VERSION",
+            mockito                  : "org.mockito:mockito-core:$MOCKITO_VERSION",
+            powerMockJunitExtension  : "org.powermock:powermock-module-junit4:$POWERMOCK_VERSION",
+            powerMockJunitBootstrap  : "org.powermock:powermock-module-junit4-rule:$POWERMOCK_VERSION",
+            powerMockJunitClassLoader: "org.powermock:powermock-classloading-xstream:$POWERMOCK_CLASSLOADER_VERSION",
+            powerMockMockitoExtension: "org.powermock:powermock-api-mockito2:$POWERMOCK_VERSION",
+            assertJCore              : "org.assertj:assertj-core:$ASSERTJ_VERSION"
     ]
 }
