@@ -1,6 +1,7 @@
 package com.moin.sparknetworks.presentation.view
 
 import android.content.Context
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,10 +14,14 @@ import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.show
 import io.realm.Realm
 import kotlinx.android.synthetic.main.layout_personality_adapter_item.view.*
+import kotlinx.android.synthetic.main.layout_personality_header.view.*
 
 
 class PersonalityAdapter(private val context: Context) :
-    RecyclerView.Adapter<PersonalityAdapter.ViewHolder>() {
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    private val TYPE_HEADER = 0
+    private val TYPE_ITEM = 1
 
     private var questionsList = mutableListOf<QuestionRecord>()
     private var hardfactList = mutableListOf<QuestionRecord>()
@@ -24,99 +29,123 @@ class PersonalityAdapter(private val context: Context) :
     private var introversionList = mutableListOf<QuestionRecord>()
     private var passionList = mutableListOf<QuestionRecord>()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
-        return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.layout_personality_adapter_item,
-                parent,
-                false
+        if (viewType == TYPE_HEADER) {
+            return HeaderViewHolder(
+                LayoutInflater.from(parent.context).inflate(
+                    R.layout.layout_personality_header,
+                    parent,
+                    false
+                )
             )
-        )
+        } else {
+            return ItemViewHolder(
+                LayoutInflater.from(parent.context).inflate(
+                    R.layout.layout_personality_adapter_item,
+                    parent,
+                    false
+                )
+            )
+        }
 
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.itemView.question.text = questionsList[position].question.toString()
-        val options = questionsList[position].question_type?.options
-        val selectedOptionValue = questionsList[position].question_type?.selectedValue
+    override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
+        if (viewHolder is ItemViewHolder) {
+            (context.getString(R.string.bullet) + questionsList[position].question.toString()).also { viewHolder.itemView.question.text = it }
+            val options = questionsList[position].question_type?.options
+            val selectedOptionValue = questionsList[position].question_type?.selectedValue
 
-        if (options?.size == 3) {
-            viewHolder.itemView.option_4.gone()
+            if (options?.size == 3) {
+                viewHolder.itemView.option_4.gone()
+            } else {
+                viewHolder.itemView.option_4.show()
+            }
+
+            options?.forEachIndexed { index, alreadySelectedValue ->
+                when (index) {
+                    0 -> {
+                        if (alreadySelectedValue == selectedOptionValue) {
+                            viewHolder.itemView.option_1.isChecked = true
+                        }
+                        viewHolder.itemView.option_1.text = options[index]
+                    }
+                    1 -> {
+                        if (alreadySelectedValue == selectedOptionValue) {
+                            viewHolder.itemView.option_2.isChecked = true
+                        }
+                        viewHolder.itemView.option_2.text = options[index]
+                    }
+                    2 -> {
+                        viewHolder.itemView.option_3.text = options[index]
+                        if (alreadySelectedValue == selectedOptionValue) {
+                            viewHolder.itemView.option_3.isChecked = true
+                        }
+                    }
+                    3 -> {
+                        if (alreadySelectedValue == selectedOptionValue) {
+                            viewHolder.itemView.option_4.isChecked = true
+                        }
+                        viewHolder.itemView.option_4.text = options[index]
+                    }
+
+                }
+            }
+
+            viewHolder.itemView.option_1.click {
+
+                Realm.getDefaultInstance().executeTransaction {
+                    questionsList[position].question_type?.selectedValue =
+                        options?.get(0).toString()
+                }
+                Realm.getDefaultInstance().close()
+                showToast()
+            }
+
+            viewHolder.itemView.option_2.click {
+                Realm.getDefaultInstance().executeTransaction {
+                    questionsList[position].question_type?.selectedValue =
+                        options?.get(1).toString()
+                }
+                Realm.getDefaultInstance().close()
+                showToast()
+            }
+            viewHolder.itemView.option_3.click {
+                Realm.getDefaultInstance().executeTransaction {
+                    questionsList[position].question_type?.selectedValue =
+                        options?.get(2).toString()
+                }
+                Realm.getDefaultInstance().close()
+                showToast()
+
+            }
+            viewHolder.itemView.option_4.click {
+                Realm.getDefaultInstance().executeTransaction {
+                    questionsList[position].question_type?.selectedValue =
+                        options?.get(3).toString()
+                }
+                Realm.getDefaultInstance().close()
+                showToast()
+            }
+
         } else {
-            viewHolder.itemView.option_4.show()
+            viewHolder.itemView.text_header.text = questionsList[position].category.toString()
+            viewHolder.itemView.text_header.paintFlags =  viewHolder.itemView.text_header.paintFlags or Paint.UNDERLINE_TEXT_FLAG
         }
-
-        options?.forEachIndexed { index, alreadySelectedValue ->
-            when (index) {
-                0 -> {
-                    if (alreadySelectedValue == selectedOptionValue) {
-                        viewHolder.itemView.option_1.isChecked = true
-                    }
-                    viewHolder.itemView.option_1.text = options[index]
-                }
-                1 -> {
-                    if (alreadySelectedValue == selectedOptionValue) {
-                        viewHolder.itemView.option_2.isChecked = true
-                    }
-                    viewHolder.itemView.option_2.text = options[index]
-                }
-                2 -> {
-                    viewHolder.itemView.option_3.text = options[index]
-                    if (alreadySelectedValue == selectedOptionValue) {
-                        viewHolder.itemView.option_3.isChecked = true
-                    }
-                }
-                3 -> {
-                    if (alreadySelectedValue == selectedOptionValue) {
-                        viewHolder.itemView.option_4.isChecked = true
-                    }
-                    viewHolder.itemView.option_4.text = options[index]
-                }
-
-            }
-        }
-
-        viewHolder.itemView.option_1.click {
-
-            Realm.getDefaultInstance().executeTransaction {
-                questionsList[position].question_type?.selectedValue = options?.get(0).toString()
-            }
-            Realm.getDefaultInstance().close()
-            showToast()
-        }
-
-        viewHolder.itemView.option_2.click {
-            Realm.getDefaultInstance().executeTransaction {
-                questionsList[position].question_type?.selectedValue = options?.get(1).toString()
-            }
-            Realm.getDefaultInstance().close()
-            showToast()
-        }
-        viewHolder.itemView.option_3.click {
-            Realm.getDefaultInstance().executeTransaction {
-                questionsList[position].question_type?.selectedValue = options?.get(2).toString()
-            }
-            Realm.getDefaultInstance().close()
-            showToast()
-
-        }
-        viewHolder.itemView.option_4.click {
-            Realm.getDefaultInstance().executeTransaction {
-                questionsList[position].question_type?.selectedValue = options?.get(3).toString()
-            }
-            Realm.getDefaultInstance().close()
-            showToast()
-        }
-
     }
 
     override fun getItemCount(): Int {
-        return questionsList.size
+        return (questionsList.size)
     }
 
     override fun getItemViewType(position: Int): Int {
-        return super.getItemViewType(position)
+        return if (isHeaderType(position)) {
+            TYPE_HEADER
+        } else {
+            TYPE_ITEM
+        }
+
     }
 
     fun setData(t: List<QuestionRecord>) {
@@ -127,7 +156,13 @@ class PersonalityAdapter(private val context: Context) :
         questionsList.addAll(passionList)
     }
 
+    private fun isHeaderType(position: Int): Boolean {
+        if (questionsList[position].question == null) return true
+        return false
+    }
+
     private fun separateListByCategory(questions: List<QuestionRecord>) {
+        addHeaderForEachListType()
         for (i in 0..questions.size.minus(1)) {
             when {
                 //hard_fact list
@@ -154,11 +189,19 @@ class PersonalityAdapter(private val context: Context) :
         }
     }
 
+    private fun addHeaderForEachListType() {
+        hardfactList.add(QuestionRecord(category =  PersonalityActivity.HARD_FACT_LIST))
+        lifestyleList.add(QuestionRecord(category =  PersonalityActivity.LIFE_STYLE_LIST))
+        introversionList.add(QuestionRecord(category =  PersonalityActivity.INTROVERSION_LIST))
+        passionList.add(QuestionRecord(category =  PersonalityActivity.PASSION_LIST))
+    }
+
     private fun showToast() {
         Toast.makeText(context, context.getString(R.string.toast_msg), Toast.LENGTH_SHORT)
             .show()
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class HeaderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 }

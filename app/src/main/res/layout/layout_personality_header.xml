@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/background_color"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:padding="@dimen/size_10"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/text_header"
         android:layout_width="match_parent"
-        android:text="Header Text"
-        android:textSize="30sp"
+        android:text="@string/header_text"
+        android:textSize="@dimen/size_header_text"
         android:textColor="@color/white"
         android:layout_height="@dimen/size_44"
+        android:fontFamily=""
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

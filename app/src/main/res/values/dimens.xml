@@ -6,4 +6,6 @@
     <dimen name="size_38">38dp</dimen>
     <dimen name="size_44">44dp</dimen>
     <dimen name="size_1">1dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_header_text">30sp</dimen>
 </resources>

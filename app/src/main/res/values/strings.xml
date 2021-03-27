@@ -8,4 +8,6 @@
     <string name="option_1">Option 1</string>
     <string name="text_1">Text 1</string>
     <string name="toast_msg">Your answer has been saved successfully!</string>
+    <string name="header_text"><u>Header Text</u></string>
+    <string name="bullet">\•  \</string>
 </resources>
