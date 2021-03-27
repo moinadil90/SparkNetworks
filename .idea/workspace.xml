@@ -11,6 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="240808bc-6345-4a2b-8b8c-f407a90e2efd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/SplashScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_splash_screen.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,10 +24,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/SparkNetworks.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib-persistencestorage/SparkNetworks.lib-persistencestorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/lib-persistencestorage/SparkNetworks.lib-persistencestorage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moin/sparknetworks/presentation/view/PersonalityAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_adapter_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_adapter_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_personality_header.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
@@ -36,6 +39,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PDAID18092501800]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -58,6 +73,13 @@
     <property name="multi-representation-preview/Users/moinadil/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="SparkNetworks.app" />
       <option name="DEPLOY" value="true" />
@@ -130,10 +152,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="667" y="327" key="AndroidCreateXmlResourceDialog" timestamp="1616829949995">
+    <state x="484" y="322" key="AndroidCreateResourceFileDialog" timestamp="1616831851273">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="667" y="327" key="AndroidCreateXmlResourceDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616829949995" />
+    <state x="484" y="322" key="AndroidCreateResourceFileDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616831851273" />
+    <state x="667" y="327" key="AndroidCreateXmlResourceDialog" timestamp="1616833577870">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="667" y="327" key="AndroidCreateXmlResourceDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616833577870" />
     <state x="665" y="313" key="AndroidProcessChooserDialog" timestamp="1616826886301">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -142,31 +168,32 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="481" height="466" key="DebuggerActiveHint/0.0.1792.1120@0.0.1792.1120" timestamp="1616823362035" />
-    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog" timestamp="1616830630125">
-      <screen x="0" y="23" width="1792" height="1036" />
+    <state x="100" y="100" width="1592" height="921" key="DiffContextDialog" timestamp="1616831393003">
+      <screen x="0" y="23" width="1792" height="1037" />
     </state>
     <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1616830585460" />
     <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1616786891811" />
     <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.23.1792.1036@0.23.1792.1036" timestamp="1616830630125" />
-    <state width="1750" height="310" key="GridCell.Tab.0.bottom" timestamp="1616828110405">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state x="100" y="100" width="1592" height="921" key="DiffContextDialog/0.23.1792.1037@0.23.1792.1037" timestamp="1616831393003" />
+    <state width="1750" height="294" key="GridCell.Tab.0.bottom" timestamp="1616834272402">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="310" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616827958447" />
+    <state width="1750" height="294" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1616834272402" />
     <state width="1750" height="310" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1616828110405" />
-    <state width="1750" height="310" key="GridCell.Tab.0.center" timestamp="1616828110404">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state width="1750" height="294" key="GridCell.Tab.0.center" timestamp="1616834272401">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="310" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616827958446" />
+    <state width="1750" height="294" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1616834272401" />
     <state width="1750" height="310" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1616828110404" />
-    <state width="1750" height="310" key="GridCell.Tab.0.left" timestamp="1616828110404">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state width="1750" height="294" key="GridCell.Tab.0.left" timestamp="1616834272400">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="310" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616827958446" />
+    <state width="1750" height="294" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1616834272400" />
     <state width="1750" height="310" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1616828110404" />
-    <state width="1750" height="310" key="GridCell.Tab.0.right" timestamp="1616828110404">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state width="1750" height="294" key="GridCell.Tab.0.right" timestamp="1616834272402">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="310" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616827958447" />
+    <state width="1750" height="294" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616834272402" />
     <state width="1750" height="310" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1616828110404" />
     <state width="1750" height="310" key="GridCell.Tab.1.bottom" timestamp="1616827291318">
       <screen x="0" y="0" width="1792" height="1120" />
@@ -188,6 +215,10 @@
     </state>
     <state width="1750" height="310" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1616827291318" />
     <state width="1750" height="327" key="GridCell.Tab.1.right/0.23.1792.1034@0.23.1792.1034" timestamp="1616786862571" />
+    <state x="567" y="249" key="RollbackChangesDialog" timestamp="1616831125237">
+      <screen x="0" y="23" width="1792" height="1037" />
+    </state>
+    <state x="567" y="249" key="RollbackChangesDialog/0.23.1792.1037@0.23.1792.1037" timestamp="1616831125237" />
     <state x="561" y="248" width="670" height="731" key="search.everywhere.popup" timestamp="1616830758347">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

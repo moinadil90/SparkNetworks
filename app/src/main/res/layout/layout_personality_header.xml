@@ -13,7 +13,6 @@
         android:textSize="@dimen/size_header_text"
         android:textColor="@color/white"
         android:layout_height="@dimen/size_44"
-        android:fontFamily=""
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

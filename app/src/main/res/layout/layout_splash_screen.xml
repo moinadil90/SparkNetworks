@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".presentation.view.SplashScreen">
+
+    <ImageView
+        android:id="@+id/splash_screen"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/option_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44"
+        android:text="@string/spark_networks"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_spark_networks_text"
+        android:layout_marginTop="@dimen/text_margin_from_top"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
