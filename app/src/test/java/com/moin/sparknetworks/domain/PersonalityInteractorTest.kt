@@ -3,7 +3,7 @@ package com.moin.sparknetworks.domain
 import android.content.Context
 import com.moin.sparknetworks.model.repository.PersonalityRepositoryContract
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
-import com.moin.sparknetworks.model.storage.records.QuestionTypeTest
+import com.moin.sparknetworks.model.storage.records.QuestionType
 import com.moin.sparknetworks.utils.readJSONFromAsset
 import io.reactivex.Completable
 import io.reactivex.Single
@@ -129,21 +129,21 @@ class PersonalityInteractorTest {
         questionRecordList.add(
             QuestionRecord(
                 "What is your gender?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "hard_fact"
             )
         )
         questionRecordList.add(
             QuestionRecord(
                 "How often do you smoke?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "lifestyle"
             )
         )
         questionRecordList.add(
             QuestionRecord(
                 "Do you enjoy going on holiday by yourself?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "introversion"
             )
         )

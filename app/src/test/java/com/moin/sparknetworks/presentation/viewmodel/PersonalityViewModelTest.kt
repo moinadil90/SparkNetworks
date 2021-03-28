@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import com.moin.sparknetworks.domain.PersonalityInteractorContract
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
-import com.moin.sparknetworks.model.storage.records.QuestionTypeTest
+import com.moin.sparknetworks.model.storage.records.QuestionType
 import com.moin.sparknetworks.utils.readJSONFromAsset
 import io.reactivex.Completable
 import io.reactivex.Single
@@ -130,32 +130,25 @@ class PersonalityViewModelTest: AppCompatActivity() {
         questionRecordList.add(
             QuestionRecord(
                 "What is your gender?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "hard_fact"
             )
         )
         questionRecordList.add(
             QuestionRecord(
                 "How often do you smoke?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "lifestyle"
             )
         )
         questionRecordList.add(
             QuestionRecord(
                 "Do you enjoy going on holiday by yourself?",
-                QuestionTypeTest(),
+                QuestionType(),
                 "introversion"
             )
         )
         return questionRecordList
     }
 
-    /**
-     * Returns Mockito.any() as nullable type to avoid java.lang.IllegalStateException when
-     * null is returned.
-     */
-    fun <T> any(): T = Mockito.any<T>()
-
 }
-
