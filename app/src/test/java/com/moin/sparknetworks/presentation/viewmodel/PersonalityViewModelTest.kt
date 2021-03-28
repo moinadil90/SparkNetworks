@@ -1,7 +1,7 @@
 package com.moin.sparknetworks.presentation.viewmodel
 
 import android.content.Context
-import android.database.DatabaseUtils
+import androidx.appcompat.app.AppCompatActivity
 import com.moin.sparknetworks.domain.PersonalityInteractorContract
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.model.storage.records.QuestionTypeTest
@@ -10,8 +10,6 @@ import io.reactivex.Completable
 import io.reactivex.Single
 import io.reactivex.android.plugins.RxAndroidPlugins
 import io.reactivex.plugins.RxJavaPlugins
-import io.realm.Realm
-import io.realm.Realm.getApplicationContext
 import org.assertj.core.api.AssertionsForClassTypes
 import org.json.JSONObject
 import org.junit.After
@@ -26,7 +24,7 @@ import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
-class PersonalityViewModelTest {
+class PersonalityViewModelTest: AppCompatActivity() {
 
     lateinit var personalityViewModel: PersonalityViewModelContract
 
@@ -36,23 +34,19 @@ class PersonalityViewModelTest {
     lateinit var mockPersonalityInteractor: PersonalityInteractorContract
 
     @Mock
-    lateinit var context: Context
-    lateinit var personalityObject: JSONObject
+    var mockContext: Context? = null
 
-    @Mock
-    lateinit var mockRealm: Realm
+    lateinit var personalityObject: JSONObject
 
     @Before
     fun setup() {
         MockitoAnnotations.initMocks(this)
-        Realm.init(getApplicationContext());
-        var db: DatabaseUtils
         personalityViewModel = PersonalityViewModel(mockPersonalityInteractor)
-        loadTestData()
+        mockContext?.let { loadTestData(it) }
     }
 
-    private fun loadTestData() {
-        personalityObject = JSONObject(readJSONFromAsset(context?.applicationContext) ?: "")
+    private fun loadTestData(mockContext: Context) {
+        personalityObject = JSONObject(readJSONFromAsset(mockContext) ?: "")
         questionRecord = mockQuestionRecord()
     }
 
@@ -156,6 +150,12 @@ class PersonalityViewModelTest {
         )
         return questionRecordList
     }
+
+    /**
+     * Returns Mockito.any() as nullable type to avoid java.lang.IllegalStateException when
+     * null is returned.
+     */
+    fun <T> any(): T = Mockito.any<T>()
 
 }
 

@@ -5,7 +5,7 @@ import android.view.View
 
 
 /**
- * View extensions
+ *  Extensions
  */
 
 fun View.click(debounceTime: Long = 300L, action: (view: View) -> Unit) {

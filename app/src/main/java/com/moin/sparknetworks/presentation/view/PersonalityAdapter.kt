@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.moin.sparknetworks.R
 import com.moin.sparknetworks.click
@@ -53,7 +54,9 @@ class PersonalityAdapter(private val context: Context) :
 
     override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
         if (viewHolder is ItemViewHolder) {
-            (context.getString(R.string.bullet) + questionsList[position].question.toString()).also { viewHolder.itemView.question.text = it }
+            (context.getString(R.string.bullet) + questionsList[position].question.toString()).also {
+                viewHolder.itemView.question.text = it
+            }
             val options = questionsList[position].question_type?.options
             val selectedOptionValue = questionsList[position].question_type?.selectedValue
 
@@ -62,6 +65,8 @@ class PersonalityAdapter(private val context: Context) :
             } else {
                 viewHolder.itemView.option_4.show()
             }
+
+            setBackgroundBasedOnCategory(questionsList[position].category, viewHolder)
 
             options?.forEachIndexed { index, alreadySelectedValue ->
                 when (index) {
@@ -130,9 +135,87 @@ class PersonalityAdapter(private val context: Context) :
             }
 
         } else {
+            //Type Header ViewHolder
             viewHolder.itemView.text_header.text = questionsList[position].category.toString()
-            viewHolder.itemView.text_header.paintFlags =  viewHolder.itemView.text_header.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+            viewHolder.itemView.text_header.paintFlags =
+                viewHolder.itemView.text_header.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+            setBackgroundBasedOnCategory(questionsList[position].category.toString(), viewHolder)
         }
+    }
+
+    private fun setBackgroundBasedOnCategory(category: String?, viewHolder: RecyclerView.ViewHolder) {
+        if (viewHolder is ItemViewHolder) {
+            when (category) {
+                PersonalityActivity.STRING_HARD_FACT -> {
+                    viewHolder.itemView.setBackgroundColor(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.background_color
+                        )
+                    )
+                }
+                PersonalityActivity.STRING_LIFE_STYLE -> {
+                    viewHolder.itemView.setBackgroundColor(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.colorPrimary
+                        )
+                    )
+                }
+                PersonalityActivity.STRING_INTROVERSION -> {
+                    viewHolder.itemView.setBackgroundColor(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.background_color
+                        )
+                    )
+                }
+                else -> {
+                    viewHolder.itemView.setBackgroundColor(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.colorPrimary
+                        )
+                    )
+                }
+            }
+        } else {
+             when(category) {
+                 PersonalityActivity.HARD_FACT_LIST -> {
+                     viewHolder.itemView.setBackgroundColor(
+                         ContextCompat.getColor(
+                             context,
+                             R.color.background_color
+                         )
+                     )
+                 }
+                 PersonalityActivity.LIFE_STYLE_LIST -> {
+                     viewHolder.itemView.setBackgroundColor(
+                         ContextCompat.getColor(
+                             context,
+                             R.color.colorPrimary
+                         )
+                     )
+                 }
+                 PersonalityActivity.INTROVERSION_LIST -> {
+                     viewHolder.itemView.setBackgroundColor(
+                         ContextCompat.getColor(
+                             context,
+                             R.color.background_color
+                         )
+                     )
+                 }
+                 else -> {
+                     viewHolder.itemView.setBackgroundColor(
+                         ContextCompat.getColor(
+                             context,
+                             R.color.colorPrimary
+                         )
+                     )
+                 }
+             }
+        }
+
     }
 
     override fun getItemCount(): Int {
@@ -166,19 +249,19 @@ class PersonalityAdapter(private val context: Context) :
         for (i in 0..questions.size.minus(1)) {
             when {
                 //hard_fact list
-                questions[i].category.equals("hard_fact") -> questions[i].let {
+                questions[i].category.equals(PersonalityActivity.STRING_HARD_FACT) -> questions[i].let {
                     hardfactList.add(
                         it
                     )
                 }
                 //lifestyle list
-                questions[i].category.equals("lifestyle") -> questions[i].let {
+                questions[i].category.equals(PersonalityActivity.STRING_LIFE_STYLE) -> questions[i].let {
                     lifestyleList.add(
                         it
                     )
                 }
                 //introversion list
-                questions[i].category.equals("introversion") -> questions[i].let {
+                questions[i].category.equals(PersonalityActivity.STRING_INTROVERSION) -> questions[i].let {
                     introversionList.add(
                         it
                     )
@@ -190,10 +273,10 @@ class PersonalityAdapter(private val context: Context) :
     }
 
     private fun addHeaderForEachListType() {
-        hardfactList.add(QuestionRecord(category =  PersonalityActivity.HARD_FACT_LIST))
-        lifestyleList.add(QuestionRecord(category =  PersonalityActivity.LIFE_STYLE_LIST))
-        introversionList.add(QuestionRecord(category =  PersonalityActivity.INTROVERSION_LIST))
-        passionList.add(QuestionRecord(category =  PersonalityActivity.PASSION_LIST))
+        hardfactList.add(QuestionRecord(category = PersonalityActivity.HARD_FACT_LIST))
+        lifestyleList.add(QuestionRecord(category = PersonalityActivity.LIFE_STYLE_LIST))
+        introversionList.add(QuestionRecord(category = PersonalityActivity.INTROVERSION_LIST))
+        passionList.add(QuestionRecord(category = PersonalityActivity.PASSION_LIST))
     }
 
     private fun showToast() {

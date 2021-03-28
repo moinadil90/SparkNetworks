@@ -8,7 +8,7 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         // Init the application requirement
-        PersistenceStorageManager.init(this); // Storage should be first
+        PersistenceStorageManager.init(this) // Storage should be first
         Realm.init(this)
         val config = RealmConfiguration.Builder()
             .deleteRealmIfMigrationNeeded()

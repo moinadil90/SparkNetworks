@@ -18,7 +18,10 @@ class PersonalityDAO(private val persistenceStorage: PersistenceStorageContract)
         getRealm().run {
             try {
                 beginTransaction()
-                createAllFromJson(QuestionRecord::class.java, personalityObject.getJSONArray("questions"))
+                createAllFromJson(
+                    QuestionRecord::class.java,
+                    personalityObject.getJSONArray("questions")
+                )
                 commitTransaction()
                 emitter.onComplete()
             } catch (e: Exception) {
@@ -41,10 +44,6 @@ class PersonalityDAO(private val persistenceStorage: PersistenceStorageContract)
     private fun getQuestionsQuery() = getRealm().where(QuestionRecord::class.java)
     private fun getRealm(): Realm {
         return (persistenceStorage.getDB() as Realm)
-    }
-
-    private fun clearDB(): Realm {
-        return (persistenceStorage.clear() as Realm)
     }
 
 }

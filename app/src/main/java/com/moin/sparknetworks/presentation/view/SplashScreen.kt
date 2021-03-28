@@ -3,6 +3,7 @@ package com.moin.sparknetworks.presentation.view
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.moin.sparknetworks.R
@@ -15,14 +16,9 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_splash_screen)
 
-        // This is used to hide the status bar and make
-        // the splash screen as a full screen activity.
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
+        supportActionBar?.hide()
 
-        Handler().postDelayed(Runnable {
+        Handler(Looper.getMainLooper()).postDelayed({
             val i = Intent(this, PersonalityActivity::class.java)
             startActivity(i)
             finish()

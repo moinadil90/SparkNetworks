@@ -34,6 +34,7 @@ class PersonalityInteractorTest {
 
     @Mock
     var context: Context? = null
+
     lateinit var personalityObject: JSONObject
 
     @Before

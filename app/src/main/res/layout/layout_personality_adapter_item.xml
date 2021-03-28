@@ -35,7 +35,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_38"
                 android:background="@drawable/rounded_corner"
-                android:checked="true"
                 android:text="@string/option_1"
                 android:textColor="@color/text_color" />
 

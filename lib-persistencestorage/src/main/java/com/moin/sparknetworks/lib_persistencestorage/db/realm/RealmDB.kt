@@ -21,9 +21,7 @@ import timber.log.Timber
  * Sets up the default configuration and initializes Realm DB.
  */
 internal class RealmDB(
-    private val context: Context/*,
-                       private val moduleList: List<RealmModuleContract>,
-                       private val changeList: List<PersistenceStorageChangeContract>*/
+    private val context: Context
 ) :
     DBContract {
 

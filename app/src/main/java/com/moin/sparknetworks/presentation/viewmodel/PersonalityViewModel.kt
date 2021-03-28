@@ -2,15 +2,12 @@ package com.moin.sparknetworks.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.moin.sparknetworks.domain.PersonalityInteractorContract
-import com.moin.sparknetworks.model.repository.PersonalityRepositoryContract
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import io.reactivex.Completable
 import io.reactivex.Single
-import io.realm.Realm
 import org.json.JSONObject
 
 class PersonalityViewModel(private val personalityInteractor: PersonalityInteractorContract) : ViewModel(), PersonalityViewModelContract {
-     val realm: Realm? = Realm.getDefaultInstance()
 
     override fun save(personalityObject: JSONObject): Completable {
         return personalityInteractor.save(personalityObject)

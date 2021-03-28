@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.moin.sparknetworks.R
 import com.moin.sparknetworks.model.storage.records.QuestionRecord
 import com.moin.sparknetworks.utils.readJSONFromAsset
+import io.reactivex.Single
 import io.reactivex.observers.DisposableCompletableObserver
 import io.reactivex.observers.DisposableSingleObserver
 import io.realm.Realm
@@ -37,6 +38,7 @@ class PersonalityFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         personalityAdapter = context?.let { PersonalityAdapter(it) }
 
+        //Only once, get JSON object from "personality_test.json" asset and save it to RealmDB, when user launches the App for the first time.
         if (Realm.getDefaultInstance().where(QuestionRecord::class.java).findFirst() == null) {
             val personalityObject =
                 JSONObject(readJSONFromAsset(activity?.applicationContext) ?: "")
@@ -51,6 +53,12 @@ class PersonalityFragment : Fragment() {
         item_rv.adapter = personalityAdapter
     }
 
+    /**
+     * Subscribe to it to save personalityObject to RealmDB.
+     *
+     * @param personalityObject object which contains questions and categories,
+     * @return A {@Link Completable} to indicate whether this request is completed or not
+     */
     private fun saveQuestionsToDB(personalityObject: JSONObject) {
         (activity as PersonalityActivity).viewModel.save(personalityObject)
             .subscribe(
@@ -65,6 +73,11 @@ class PersonalityFragment : Fragment() {
                 })
     }
 
+    /**
+     * Subscribe to it in order to get the List of [QuestionRecord].
+     *
+     * @return A [Single] emitting the list of [QuestionRecord].
+     */
     private fun fetchQuestionsFromDB() {
         (activity as PersonalityActivity).viewModel.fetchQuestionsFromDB()
             .subscribe(object : DisposableSingleObserver<List<QuestionRecord>>() {

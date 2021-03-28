@@ -8,7 +8,7 @@ import com.moin.sparknetworks.lib_persistencestorage.exception.DBNotInitializeEx
 object PersistenceStorage : PersistenceStorageContract {
     private var appDB: DBContract? = null
 
-    fun init(context: Context/*, moduleList: List<RealmModuleContract>, changeList: List<PersistenceStorageChangeContract>*/) {
+    fun init(context: Context) {
         appDB = RealmDB(context)
     }
 
