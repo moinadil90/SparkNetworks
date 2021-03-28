@@ -1,0 +1,11 @@
+This repo contains the implementation for the Personality Test, which has been implemented as an Android Application. The Application starts with a Splash Screen, followed by the Personality Screen. 
+
+Personality Screen showcases the list of questions, separated by the categories. So, at first you'll see all the questions of category type "hard_fact", and as you scroll further down, this would be followed by the questions of category type "lifestyle". Further down, you'll see the questions of category type "introversion", which would then be followed by the questions of category type "passion".
+
+Architecture used is MVVM and Clean architecture. Solid Principle, Kotlin, RxJava, Realm DB, Dagger2 for dependency injection, Timber as a logger library, Mockito for Unit test cases and Espresso for Instrumented test cases have been used.
+
+Most of the code is self explanatory with proper comments wherever needed. Also, I have created one module "lib-persistencestorage", which handles the Realm DB initialization, clear DB, close DB, RealmDBMigration, RealmObjectSchema, DB Configuration, DBNotInitializeException, etc. Some of these are not being used in this project, however, I created them just to demonstrate my expertise in this area. The "app" would be consuming module "lib-persistencestorage". 
+
+Also, since I am using MVVM + Clean architecture, I have presentation(having view and viewmodel), domain(having interactor) and model(having repository, service, storage(storage further has DAO and records) and api). In model, we are using only respository and storage, we are not using service and api, as this project doesn't need them, so, I have included empty packages of service and api, just to showcase that had I been been consuming apis, how the project structure would look like and also to demonstrate my understanding of MVVM + Clean architecture.
+
+
